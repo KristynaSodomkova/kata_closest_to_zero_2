@@ -33,6 +33,6 @@ def test_find_the_shortest():
 
 
 def test_similar_order():
-    assert similar_order(list_of_str_for_test3, "stop") == "stpo"
+    assert find_similar_order(list_of_str_for_test3, "stop") == "stpo"
 
 

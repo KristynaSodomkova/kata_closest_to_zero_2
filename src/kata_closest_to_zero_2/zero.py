@@ -1,3 +1,7 @@
+import numpy as np
+from Levenshtein import distance
+
+
 def how_many_same_letters(word1, word2):
     score = 0
     for letter in word1:
@@ -42,3 +46,7 @@ def find_the_shortest(list_of_str, given_word):
     return min(highest_scored_words, key=len)
 
 
+def find_similar_order(list_of_str, given_word):
+    distances = [distance(given_word, s) for s in list_of_str]
+    closest_word_index = np.argmin(distances)
+    return list_of_str[closest_word_index]
