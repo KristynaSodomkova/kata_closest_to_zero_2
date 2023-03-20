@@ -28,9 +28,5 @@ def test_list_the_highest_scored_words():
     assert list_the_highest_scored_words(list_of_str_for_test2, "stop") == ["postal", "post"]
 
 
-def test_more_than_one_max_value():
-    assert pick_the_highest_scored_word(list_of_str_for_test2, "stop") == "post"
-
-
-#def test_find_the_shortest():
- #   assert find_the_shortest() ==
+def test_find_the_shortest():
+    assert find_the_shortest() == "post"
