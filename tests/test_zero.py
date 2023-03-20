@@ -35,3 +35,7 @@ def test_find_the_shortest():
 def test_similar_order():
     assert find_similar_order(list_of_str_for_test3, "stop") == ["sotp", "stpo"]
 
+
+def test_pick_the_first():
+    assert identify_most_similar_word(list_of_str_for_test3, "stop") == "sotp"
+
