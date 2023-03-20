@@ -55,3 +55,8 @@ def find_similar_order(list_of_str, given_word):
 def identify_most_similar_word(list_of_str, given_word):
     to_identify = find_similar_order(list_of_str, given_word)
     return to_identify[0]
+
+# To do list:
+# decorate functions so that it is clear what it does
+# error handling (f.e. wrong input
+# mom and mother - rewrite the create_list_of_scores function?
