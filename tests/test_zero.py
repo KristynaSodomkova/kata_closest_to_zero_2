@@ -19,11 +19,13 @@ def test_create_list_of_counts():
 def test_find_max_value():
     assert find_max_value(list_of_str_for_test, "stop")
 
+
 def test_create_list_of_indexes_with_highest_scores():
     assert create_list_of_indexes_with_highest_scores(list_of_str_for_test2, "stop") == [0,1]
 
-def test_pick_the_highest_scored_words():
-    assert pick_the_highest_scored_word(list_of_str_for_test, "stop") == "post"
+
+def test_list_the_highest_scored_words():
+    assert list_the_highest_scored_words(list_of_str_for_test2, "stop") == ["postal", "post"]
 
 
 def test_more_than_one_max_value():
