@@ -13,8 +13,11 @@ def test_does_not_count_twice():
 
 
 def test_create_list_of_counts():
-    assert create_list_of_counts(list_of_str_for_test, "stop") == [4, 3, 3, 2, 2, 1]
+    assert create_list_of_scores(list_of_str_for_test, "stop") == [4, 3, 3, 2, 2, 1]
 
+
+def test_find_max_value():
+    assert find_max_value(list_of_str_for_test, "stop")
 
 def test_pick_the_highest_scored_words():
     assert pick_the_highest_scored_word(list_of_str_for_test, "stop") == "post"
