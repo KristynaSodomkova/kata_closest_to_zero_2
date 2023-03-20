@@ -29,4 +29,5 @@ def test_list_the_highest_scored_words():
 
 
 def test_find_the_shortest():
-    assert find_the_shortest() == "post"
+    assert find_the_shortest(list_of_str_for_test2, "stop") == "post"
+
