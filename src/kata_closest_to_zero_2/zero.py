@@ -30,7 +30,7 @@ def create_list_of_indexes_with_highest_scores(list_of_str, given_word):
     for index, score in enumerate(list_of_scores, start=0):
         if score == max_value:
             index_list.append(index)
-    return(index_list)
+    return index_list
 
 
 def list_the_highest_scored_words(list_of_str, given_word):
@@ -48,5 +48,6 @@ def find_the_shortest(list_of_str, given_word):
 
 def find_similar_order(list_of_str, given_word):
     distances = [distance(given_word, s) for s in list_of_str]
-    closest_word_index = np.argmin(distances)
-    return list_of_str[closest_word_index]
+    min_distance = min(distances)
+    closest_words = [list_of_str[i] for i, d in enumerate(distances) if d == min_distance]
+    return closest_words
