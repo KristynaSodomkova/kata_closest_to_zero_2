@@ -40,3 +40,5 @@ def list_the_highest_scored_words(list_of_str, given_word):
 def find_the_shortest(list_of_str, given_word):
     highest_scored_words = list_the_highest_scored_words(list_of_str, given_word)
     return min(highest_scored_words, key=len)
+
+
