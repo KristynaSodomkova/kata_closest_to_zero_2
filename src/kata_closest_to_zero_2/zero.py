@@ -12,4 +12,3 @@ def create_list_of_counts(list_of_str, given_word):
         list_of_counts.append(how_many_same_letters(word, given_word))
     return list_of_counts
 
-
