@@ -14,6 +14,7 @@ def test_how_many_same_letters():
 
 def test_does_not_count_twice():
     assert how_many_same_letters("most", "mm") == 1
+    assert how_many_same_letters("mom", "mother") == 2
 
 
 def test_create_list_of_counts():

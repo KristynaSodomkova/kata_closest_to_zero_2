@@ -52,6 +52,7 @@ def find_the_shortest(list_of_str, given_word):
     shortest_words = [word for word in highest_scored_words if len(word) == shortest_length]
     return shortest_words
 
+
 # uses the Levenshtein package to find the word in list_of_str that has the closest order of letters to given_word
 def find_similar_order(list_of_str, given_word):
     distances = [distance(given_word, s) for s in list_of_str]
@@ -78,8 +79,7 @@ def find_closest_to_zero(list_of_str, given_word):
     return most_similar
 
 
-
 # To do list:
-# error handling (f.e. wrong input
+# error handling (f.e. wrong input)
 # mom and mother - rewrite the create_list_of_scores function?
-
+# requirements: python-Levenshtein somehow add it somewhere
