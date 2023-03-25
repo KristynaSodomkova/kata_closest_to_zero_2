@@ -61,9 +61,14 @@ def identify_most_similar_word(list_of_str, given_word):
 
 def find_closest_to_zero(list_of_str, given_word):
     shortest = find_the_shortest(list_of_str, given_word)
+    closest = find_similar_order(shortest, given_word)
+    most_similar = identify_most_similar_word(closest, given_word)
+    return most_similar
+
+
 
 # To do list:
 # decorate functions so that it is clear what it does
 # error handling (f.e. wrong input
 # mom and mother - rewrite the create_list_of_scores function?
-#last function that would implement all the previous in a sence of ifs
+
