@@ -43,3 +43,7 @@ def test_similar_order():
 def test_pick_the_first():
     assert identify_most_similar_word(list_of_str_for_test3, "stop") == "sotp"
 
+
+def test_find_closest_to_zero():
+    assert find_closest_to_zero(list_of_str_for_test4, "abce") == "cba"
+
