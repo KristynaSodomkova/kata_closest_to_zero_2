@@ -42,7 +42,9 @@ def list_the_highest_scored_words(list_of_str, given_word):
 
 def find_the_shortest(list_of_str, given_word):
     highest_scored_words = list_the_highest_scored_words(list_of_str, given_word)
-    return min(highest_scored_words, key=len)
+    shortest_length = min(len(word) for word in highest_scored_words)
+    shortest_words = [word for word in highest_scored_words if len(word) == shortest_length]
+    return shortest_words
 
 
 def find_similar_order(list_of_str, given_word):
@@ -56,7 +58,12 @@ def identify_most_similar_word(list_of_str, given_word):
     to_identify = find_similar_order(list_of_str, given_word)
     return to_identify[0]
 
+
+def find_closest_to_zero(list_of_str, given_word):
+    shortest = find_the_shortest(list_of_str, given_word)
+
 # To do list:
 # decorate functions so that it is clear what it does
 # error handling (f.e. wrong input
 # mom and mother - rewrite the create_list_of_scores function?
+#last function that would implement all the previous in a sence of ifs

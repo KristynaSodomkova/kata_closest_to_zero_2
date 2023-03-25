@@ -3,6 +3,10 @@ from kata_closest_to_zero_2.zero import *
 list_of_str_for_test = ["post", "most", "frost", "does", "blast", "window"]
 list_of_str_for_test2 = ["postal", "post", "most", "frost", "does", "blast", "window"]
 list_of_str_for_test3 = ["sotp", "postal", "post", "stpo", "most", "does"]
+list_of_str_for_test4 = ['dog', 'god', 'doggo', 'ogd', 'cat', 'act', 'tac', 'tca',
+    'abcd', 'dcba', 'bacd', 'bcda', 'cdba', 'dcab', 'cba', 'zyxw', 'wzyx',
+    'yxwz', 'xwzy', 'zwxy', 'zywx', 'wxyz', 'wxzy', 'ywxz', 'yzwx', 'zwxy']
+
 
 def test_how_many_same_letters():
     assert how_many_same_letters("most", "post") == 3
@@ -29,7 +33,7 @@ def test_list_the_highest_scored_words():
 
 
 def test_find_the_shortest():
-    assert find_the_shortest(list_of_str_for_test2, "stop") == "post"
+    assert find_the_shortest(list_of_str_for_test4, "abce") == ["cba"]
 
 
 def test_similar_order():
